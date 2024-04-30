@@ -2,7 +2,24 @@
 var largura = null
 var altura = null
 var vidas = 1
-var tempo = 10
+var tempo = 15
+var criaMoscaTempo = 1500
+
+// incluindo dificuldade do jogo
+// .search -> retorna a "?" e o que vem após ela da url
+var nivel = window.location.search
+
+// com replace, retiramos o caractere '?'
+nivel = nivel.replace('?', '')
+
+// indicando dificuldade
+if(nivel === 'normal') {
+    criaMoscaTempo = 1500
+} else if(nivel === 'dificil') {
+    criaMoscaTempo = 1000
+} else if(nivel === 'dengue_nunca_mais') {
+    criaMoscaTempo = 750
+}
 
 // funcao do cronometro
 var cronometro = setInterval(

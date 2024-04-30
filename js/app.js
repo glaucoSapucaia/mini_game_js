@@ -21,7 +21,9 @@ function moscaAlvoPosicao() {
 
         // interação com vidas
         if(vidas > 3) {
-            alert('Fim de jogo!')
+            // game over logica
+            window.location.href = '../pages/game_over.html'
+
         } else {
             document.getElementById('v' + vidas).src = '../img/vida_vazia.png'
             vidas++

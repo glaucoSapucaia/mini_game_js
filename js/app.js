@@ -1,8 +1,32 @@
-// BOM - window
+// variaveis globais
 var largura = null
 var altura = null
 var vidas = 1
+var tempo = 3
 
+// funcao do cronometro
+var cronometro = setInterval(
+    function() {
+        tempo--
+
+        // logica tempo negativo | vitoria
+        if(tempo < 0) {
+            // limpanado cronometro apos vitoria
+            clearInterval(cronometro)
+
+            // parando a criação de moscas e a perda de vidas
+            clearInterval(cria_mosca)
+
+            // fluxo da vitória
+            alert('vitoria')
+        } else {
+            // innerHTML -> insere valores dentro de uma tag HTML
+            document.getElementById('cronometro').innerHTML = tempo
+        }
+    }, 1000
+)
+
+// BOM - window
 function ajustaTela() {
     largura = window.innerWidth
     altura = window.innerHeight

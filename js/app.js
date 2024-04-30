@@ -1,6 +1,7 @@
 // BOM - window
 var largura = null
 var altura = null
+var vidas = 1
 
 function ajustaTela() {
     largura = window.innerWidth
@@ -17,6 +18,14 @@ function moscaAlvoPosicao() {
     // removendo mosquito anterior
     if(document.getElementById('mosca')) {
         document.getElementById('mosca').remove()
+
+        // interação com vidas
+        if(vidas > 3) {
+            alert('Fim de jogo!')
+        } else {
+            document.getElementById('v' + vidas).src = '../img/vida_vazia.png'
+            vidas++
+        }
     }
     
     // -90 = reduz eixos da img para não criar efeito crossover, ultrapassando a tela
@@ -41,6 +50,12 @@ function moscaAlvoPosicao() {
     mosca.style.position = 'absolute'
 
     mosca.id = 'mosca'
+
+    // acao de matar a mosca
+    mosca.onclick = function() {
+        // this -> ajusta o contexto de uma ação para o elemento na chamada (no caso, mosca)
+        this.remove()
+    }
 
     document.body.appendChild(mosca)
 }

@@ -2,7 +2,7 @@
 var largura = null
 var altura = null
 var vidas = 1
-var tempo = 3
+var tempo = 10
 
 // funcao do cronometro
 var cronometro = setInterval(
@@ -18,7 +18,7 @@ var cronometro = setInterval(
             clearInterval(cria_mosca)
 
             // fluxo da vitória
-            alert('vitoria')
+            window.location.href = '../pages/vitoria.html'
         } else {
             // innerHTML -> insere valores dentro de uma tag HTML
             document.getElementById('cronometro').innerHTML = tempo

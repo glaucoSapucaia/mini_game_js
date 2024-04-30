@@ -14,6 +14,11 @@ ajustaTela()
 
 // posição randomica | mosca alvo
 function moscaAlvoPosicao() {
+    // removendo mosquito anterior
+    if(document.getElementById('mosca')) {
+        document.getElementById('mosca').remove()
+    }
+    
     // -90 = reduz eixos da img para não criar efeito crossover, ultrapassando a tela
     var eixo_x = Math.floor(Math.random() * largura) - 90
     var eixo_y = Math.floor(Math.random() * altura) - 90
@@ -35,9 +40,9 @@ function moscaAlvoPosicao() {
     mosca.style.top = eixo_y + 'px'
     mosca.style.position = 'absolute'
 
-    document.body.appendChild(mosca)
+    mosca.id = 'mosca'
 
-    console.log(moscaAlvoRotacao())
+    document.body.appendChild(mosca)
 }
 
 // tamanhos mosca_alvo

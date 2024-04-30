@@ -29,13 +29,15 @@ function moscaAlvoPosicao() {
     // cirando e definindo elemento img-HTML
     var mosca = document.createElement('img')
     mosca.src = '../img/mosca_sem_fundo.png'
-    mosca.className = moscaAlvoTamanho()
+    mosca.className = moscaAlvoTamanho() + ' ' + moscaAlvoRotacao()
     
     mosca.style.left = eixo_x + 'px'
     mosca.style.top = eixo_y + 'px'
     mosca.style.position = 'absolute'
 
     document.body.appendChild(mosca)
+
+    console.log(moscaAlvoRotacao())
 }
 
 // tamanhos mosca_alvo
@@ -53,5 +55,19 @@ function moscaAlvoTamanho() {
 
         case 2:
             return 'mosca_alvo2'
+    }
+}
+
+// rotação aleatoria mosca_alvo
+function moscaAlvoRotacao() {
+    // possiveis retornos => 0 e 1
+    var classe = Math.floor(Math.random() * 2)
+
+    switch(classe) {
+        case 0:
+            return 'ladoA'
+        
+        case 1:
+            return 'ladoB'
     }
 }

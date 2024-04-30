@@ -1,3 +1,10 @@
+/* cursor personalizado */
+html {
+    /* atenção */
+    /* o tamanho maximo para cursor é de 128x128 */
+    cursor: url(../img/pun_no_dime_sem_fundo2.png)10 20, auto;
+}
+
 /* body style */
 body {
     background-image: url(../img/fundo.jpg);

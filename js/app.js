@@ -6,7 +6,8 @@ function ajustaTela() {
     largura = window.innerWidth
     altura = window.innerHeight
 
-    console.log(largura, altura)
+    // test
+    // console.log(largura, altura)
 }
 
 ajustaTela()
@@ -21,17 +22,36 @@ function moscaAlvoPosicao() {
     eixo_x = eixo_x < 0 ? 0 : eixo_x
     eixo_y = eixo_y < 0 ? 0 : eixo_y
     
-    console.log(eixo_x, eixo_y)
+    // test
+    // console.log(eixo_x, eixo_y)
     
     // DOM
     // cirando e definindo elemento img-HTML
     var mosca = document.createElement('img')
     mosca.src = '../img/mosca_sem_fundo.png'
-    mosca.className = 'mosca_alvo'
+    mosca.className = moscaAlvoTamanho()
     
     mosca.style.left = eixo_x + 'px'
     mosca.style.top = eixo_y + 'px'
     mosca.style.position = 'absolute'
 
     document.body.appendChild(mosca)
+}
+
+// tamanhos mosca_alvo
+function moscaAlvoTamanho() {
+    // possiveis retornos - 0, 1 e 2
+    var classe = Math.floor(Math.random() * 3)
+    
+    // selecao de tamanho
+    switch(classe) {
+        case 0:
+            return 'mosca_alvo'
+
+        case 1:
+            return 'mosca_alvo1'
+
+        case 2:
+            return 'mosca_alvo2'
+    }
 }

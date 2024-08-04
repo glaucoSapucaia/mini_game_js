@@ -1,0 +1,5 @@
+name = "teste"
+description = "Um teste."
+
+[files]
+"./utils/fase_random.py" = ""

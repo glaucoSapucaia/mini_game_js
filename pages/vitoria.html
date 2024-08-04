@@ -23,6 +23,11 @@
     </head>
 
     <body>
+        <!-- insert audio -->
+        <audio id="som" autoplay loop="true">
+            <source src="../audio/StreetFighterIIArcadeMusicOpeningThemeCPS1.mp3" type="audio/mp3">
+        </audio>
+
         <!-- container start -->
         <div class="container">
             <!-- row start -->
@@ -63,5 +68,11 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <script>
+            let som = document.getElementById('som');
+            som.volume = 0.1;
+        </script>
+
     </body>
 </html>

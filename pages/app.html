@@ -14,6 +14,11 @@
 </head>
 <!-- onresize => atualização da screen com função js -->
 <body onresize="ajustaTela()">
+    <!-- insert audio -->
+    <audio id="som" autoplay loop="true">
+        <source src="../audio/GUILESTHEME.mp3" type="audio/mp3">
+    </audio>
+
     <!-- app interface start -->
     <div class="painel">
         <!-- vidas start -->
@@ -43,8 +48,9 @@
             }, criaMoscaTempo
         )
 
-
-
+        // volume audio
+        let som = document.getElementById('som');
+        som.volume = 0.1;
     </script>
 
 </body>

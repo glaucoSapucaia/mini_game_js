@@ -8,3 +8,5 @@ Mini game com o tema alarmante da dengue. Futuramente, podem ser incluidas mais 
 - [pixabay](https://pixabay.com/pt/)
 - [redimensionar imgs](https://www.iloveimg.com/pt)
 - [remover fundo imgs](https://www.remove.bg/pt-br)
+- [personagens e estágios](https://captown.capcom.com/pt-BR)
+- [audios e efeitos sonoros](https://www.youtube.com/)

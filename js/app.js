@@ -102,10 +102,11 @@ function moscaAlvoPosicao() {
         // this -> ajusta o contexto de uma ação para o elemento na chamada (no caso, mosca)
 
         // play do efeito sonoro
-        som.play()
+        som.volume = 0.5;
+        som.play();
 
         // remove mosca
-        this.remove()
+        this.remove();
     }
 
     document.body.appendChild(mosca)

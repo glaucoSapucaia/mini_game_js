@@ -8,6 +8,8 @@ DIR_IMAGE = DIR_ROOT / 'cursores' / 'ken_cursor.png'
 # debug
 # print(DIR_IMAGE)
 
+# Cursor
+
 
 def resize_image(new_width=64, optimize=True, quality=60):
     image_path = DIR_IMAGE
@@ -22,7 +24,7 @@ def resize_image(new_width=64, optimize=True, quality=60):
 
     new_image = image_pillow.resize((new_width, new_height))
     new_image.save(
-        DIR_ROOT / 'cursores' / 'cursor_teste.png',
+        DIR_ROOT / 'cursores' / 'ken_cursor_ok.png',
         optimize=optimize,
         quality=quality
     )

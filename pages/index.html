@@ -44,7 +44,7 @@
 
     <body>
         <!-- insert audio -->
-        <audio id="som" autoplay loop="'true">
+        <audio id="som" autoplay loop="true">
             <source src="../audio/StreetFighterIIArcadeMusicCharacterSelectCPS1.mp3" type="audio/mp3">
         </audio>
 
@@ -80,7 +80,7 @@
                 <div class="col">
                     <div class="d-flex justify-content-center mt-2 p-0">
                         <div>
-                            <select class="form-control" id="nivel">
+                            <select class="form-control" id="nivel" onclick="musica()">
                                 <option value="">-- Selecione o nível --</option>
                                 <option value="normal">Comunidade Ativa</option>
                                 <option value="dificil">Comunidade Vulnerável</option>
@@ -121,9 +121,19 @@
         ></script>
         
         <script>
-            // volume audio
+            // volume audio (selecionando nivel)
+            function musica() {
+                let som = document.getElementById('som');
+                som.volume = 0.1;
+                som.play();
+            }
+
+            // autoplay volume (quando renderizar)
+            // o chrome nao permite mais o autoplay sem interação do usuario
             let som = document.getElementById('som');
             som.volume = 0.1;
+            som.play();
+
         </script>
 
     </body>

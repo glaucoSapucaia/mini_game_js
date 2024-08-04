@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-        <title>Dengue Exterminator</title>
+        <title>Dengue Fighter</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -76,7 +76,7 @@
                 <!-- col start -->
                 <div class="col">
                     <div class="d-flex justify-content-center mt-2">
-                        <h1 style="color: #fff; background-color: red; padding: 10px 20px;">Dengue Exterminator</h1>
+                        <h1 style="color: #fff; background-color: red; padding: 10px 20px;">Dengue Fighter</h1>
                     </div>
                 </div>
                 <!-- col end -->    

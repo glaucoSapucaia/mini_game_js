@@ -2,14 +2,15 @@
 html {
     /* atenção */
     /* o tamanho maximo para cursor é de 128x128 */
-    cursor: url(../img/pun_no_dime_sem_fundo2.png)10 20, auto;
+    /* cursor: url(../img/pun_no_dime_sem_fundo2.png)10 20, auto; */
+    cursor: url(../cursores/cursor_teste.png), auto;
 }
 
 /* body style */
 body {
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/street_img/ken_stage.jpg);
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: cover;
 }
 
 /* mosca_alvo img classes */

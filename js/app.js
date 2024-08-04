@@ -94,9 +94,17 @@ function moscaAlvoPosicao() {
 
     mosca.id = 'mosca'
 
+    // efeito sonoro click
+    var som = new Audio('../audio/efeitos/ShoryukenSoundEffect.mp3')
+
     // acao de matar a mosca
     mosca.onclick = function() {
         // this -> ajusta o contexto de uma ação para o elemento na chamada (no caso, mosca)
+
+        // play do efeito sonoro
+        som.play()
+
+        // remove mosca
         this.remove()
     }
 

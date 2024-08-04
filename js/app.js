@@ -35,7 +35,7 @@ var cronometro = setInterval(
             clearInterval(cria_mosca)
 
             // fluxo da vitória
-            window.location.href = '../pages/vitoria.html'
+            window.location.href = '../vitoria.html'
         } else {
             // innerHTML -> insere valores dentro de uma tag HTML
             document.getElementById('cronometro').innerHTML = tempo
@@ -63,7 +63,7 @@ function moscaAlvoPosicao() {
         // interação com vidas
         if(vidas > 3) {
             // game over logica
-            window.location.href = '../pages/game_over.html'
+            window.location.href = '../game_over.html'
 
         } else {
             document.getElementById('v' + vidas).src = '../img/vida_vazia.png'

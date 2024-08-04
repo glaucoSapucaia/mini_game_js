@@ -1,3 +1,7 @@
+<?php
+    require "js/copiar_arquivo.php";
+?>
+
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -21,12 +25,9 @@
         <link rel="stylesheet" href="../css/index_style.css">
 
         <!-- python -->
-        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
-
-
-        <!-- python -->
-        <!-- <script type="module" config="../pyscript.toml" src="../utils/fase_random.py"></script> -->
+        <!-- <link rel="stylesheet" href="https://pyscript.net/releases/2024.8.1/core.css"> -->
+        <!-- This script tag bootstraps PyScript -->
+        <!-- <script type="module" src="https://pyscript.net/releases/2024.8.1/core.js"></script> -->
 
         <!-- js -->
         <script>
@@ -47,6 +48,7 @@
             }
 
         </script>
+
     </head>
 
     <body>
